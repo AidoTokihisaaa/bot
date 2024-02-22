@@ -1,0 +1,31 @@
+@charset "utf-8";
+:root {
+  --navbar-bg-color: #005f73;
+  --navbar-text-color: #ffffff;
+  --navbar-hover-bg-color: #0a9396;
+  --navbar-active-bg-color: #94d2bd;
+}
+.navbar-custom {
+  background-color: var(--navbar-bg-color);
+  border-bottom: 3px solid var(--navbar-active-bg-color);
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: var(--navbar-text-color);
+}
+.navbar-custom .nav-link:hover {
+  background-color: var(--navbar-hover-bg-color);
+  border-radius: 5px;
+}
+.navbar-custom .nav-link.active,
+.navbar-custom .nav-link:focus {
+  background-color: var(--navbar-active-bg-color);
+  color: var(--navbar-bg-color);
+}
+.navbar-custom .bi-robot {
+  margin-right: 8px;
+}
+.custom-font {
+  font-family: 'Arial', sans-serif;
+}
+
